@@ -1,0 +1,43 @@
+W miejsce ... poniżej wpisz kod, tak aby powstały działające programy.
+
+Program ten wykonuje konwersję ze stopni na radiany
+   według wzoru: rad = 2 * PI * deg / 360
+   
+
+#include <stdio.h>
+#include <math.h>
+int main() {
+   double deg, rad;
+   double PI =3.14;
+   printf("Podaj kat w stopniach :\n");
+   scanf("%lf", &deg);
+   rad = (2 * PI * deg) / 360 ;  /* grep PI /usr/include/math.h */
+   printf("%.3lf deg = %.3lf rad\n",deg,rad );
+   return 0;
+}
+
+
+Program ten dla dwóch liczb wczytanych z klawiatury
+   wypisuje, która z nich jest większa.
+   
+
+#include <stdio.h>
+int main()
+{
+   int a,b;
+
+   printf("Podaj pierwsza liczbe: ");
+   scanf("%d", &a);
+   printf("Podaj druga liczbe: ");
+   scanf("%d", &b);
+   if (a>b){
+    printf("wieksza liczba to :%d\n",a);
+    }
+    if (a<b){
+    printf("wieksza liczba to :%d\n",b);
+}
+    if(a==b){
+printf("podane liczby sa rowne\n");
+}
+   return 0;
+                
